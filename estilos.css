@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do projeto */
+}
+.menu-principal ul {
+    list-style: none; /* Tira as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /*Ativa o flexbox dos elementos */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background-color: rgb(241, 103, 126);
+}
+.menu-principal a {
+    text-decoration: none; /* Tira Linha */
+    color: pink;
+    display: block; /*Transforma o link no bloco - ocupa todo espaço do conteiner*/
+    padding: 20px 25px; /* Espaço entre as escritas */
+    font-weight: bold; /*Faz ficar em negrito*/
+    text-transform: uppercase; /* Transforma o texto */
+    font-size: 14px; /* aumenta a fonte */
+}
+.menu-principal a:hover { /* HOVER, quando passa o mouse em cima do menu */
+    background-color:white;
+    color:rgb(240, 3, 42);
+}
+.hero {
+    min-height: 70vh; /* Ocupa 90% da tela em que abrir */
+    background-image: url(img/Fundo.png);
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-size: cover; /* estica a imagem */
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Estilo da caixa de conteúdo */
+.hero-content {
+    text-align: center; /* Centraliza o texto DENTRO da caixa */
+    max-width: 600px; /* Impede que o texto fique largo demais em telas grandes */
+    
+    /* Efeito "Overlay": Fundo preto com 50% de transparência.
+       rgba(0, 0, 0, 0.5) = (Red, Green, Blue, Alpha/Opacidade)
+       Isso garante que o texto seja legível em cima de qualquer imagem.
+    */
+    background-color: rgba(240, 95, 95, 0.451); 
+    padding: 40px;
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Estilo do Título Principal */
+.hero-content h1 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Estilo do Subtítulo */
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilo do Botão de Ação */
+.hero-button {
+    display: inline-block;
+    background-color:rgb(240, 3, 42);
+    color:pink;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+
+    
+    /* Efeito de transição suave */
+    transition: background-color 0.3s ease;
+}
+
+    .hero-button:hover  {
+    background-color: white; 
+}
+ /* Estilos da Seção Features*/
+ .features-container {
+    /*Ativar o flexbox noo container pai*/
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens*/
+    padding: 60px 40px ;
+    background-color:rgb(241, 103, 126);  
+
+ }
+ .feature-card {
+    /* Diz ao item: Ocupe 1 parte igual ao espaço disponível*/
+    flex: 1;
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5) ;
+    text-align: center;
+ }
+ .feature-card:hover {
+    /* Quando passa o mouse acontece alguma coisa */
+     box-shadow: 0 6px 15px rgba(240, 95, 95, 0.451); 
+     transform:translateY(-5px);
+ }
+ .sobre-nos {  /* Box pai */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 150px;
+ }
+ .sobre-imagem img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+ }
+
+ .sobre-imagem {
+    flex: 1; /* Divide metade da tela da seção pai */
+ }
+
+ .sobre-texto {
+    padding-right: 10px;
+    flex: 1;
+    text-align: center;
+ }
+
